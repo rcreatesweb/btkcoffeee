@@ -2,7 +2,7 @@
   "version": 3,
   "theme": {
     "primary": "#A89F79",
-    "secondary": "#817653",
+    "secondary": "#817650",
     "background": "#F7F4EC",
     "surface": "#FFFFFF",
     "heading": "#352F28",
@@ -59,6 +59,10 @@
       {
         "id": "ramyeon",
         "name": "Ramyeon & Fries"
+      },
+      {
+        "id": "rice-meals",
+        "name": "Rice Meals"
       }
     ],
     "products": [
@@ -735,9 +739,25 @@
         "featured": false,
         "available": true,
         "boxRule": "all"
+      },
+      {
+        "id": "tapsilog",
+        "cat": "rice-meals",
+        "name": "Tapsilog",
+        "desc": "",
+        "img": "",
+        "sizes": [
+          {
+            "label": "1 Regular",
+            "price": 9900
+          }
+        ],
+        "featured": true,
+        "available": true,
+        "boxRule": "all"
       }
     ]
   },
-  "savedAt": "2026-10-20T21:21:04.224Z",
-  "publishedAt": "2026-10-20T21:21:04.224Z"
+  "savedAt": "2026-10-20T21:52:28.950Z",
+  "publishedAt": "2026-10-20T21:52:28.950Z"
 }
