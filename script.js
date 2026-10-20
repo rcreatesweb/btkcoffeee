@@ -90,7 +90,7 @@ const IMG = {
   vanilla:       px("french-vanilla.jpg"),
   dirtyMatcha:   px("dirty-matcha.jpg"),
   hershey:       px("hershey-coffee.jpg"),
-  tresLeches:    px("tres-leches.jpg"),
+  tresLeches:    px("tres-leches.jpeg"),
   whiteMocha:    px("white-chocolate-mocha.jpg"),
   biscoff:       px("biscoff-latte.jpg"),
   frappe:        px("java-chip-frappe.jpg"),
