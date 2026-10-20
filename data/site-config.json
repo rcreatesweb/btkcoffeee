@@ -210,7 +210,7 @@
             "price": 9900
           }
         ],
-        "featured": false,
+        "featured": true,
         "available": true,
         "boxRule": null
       },
@@ -258,7 +258,7 @@
             "price": 9900
           }
         ],
-        "featured": true,
+        "featured": false,
         "available": true,
         "boxRule": null
       },
@@ -274,7 +274,7 @@
             "price": 10900
           }
         ],
-        "featured": true,
+        "featured": false,
         "available": true,
         "boxRule": null
       },
@@ -338,7 +338,7 @@
             "price": 10900
           }
         ],
-        "featured": false,
+        "featured": true,
         "available": true,
         "boxRule": null
       },
@@ -738,6 +738,6 @@
       }
     ]
   },
-  "savedAt": "2026-10-20T22:06:19.492Z",
-  "publishedAt": "2026-10-20T22:06:19.492Z"
+  "savedAt": "2026-10-20T22:08:14.733Z",
+  "publishedAt": "2026-10-20T22:08:14.733Z"
 }
