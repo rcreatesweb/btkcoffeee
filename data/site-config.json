@@ -1,18 +1,18 @@
 {
   "version": 3,
   "theme": {
-    "primary": "#A89F79",
-    "secondary": "#817650",
-    "background": "#F7F4EC",
-    "surface": "#FFFFFF",
-    "heading": "#352F28",
-    "bodyText": "#352F28",
-    "muted": "#777064",
-    "btnBg": "#817653",
-    "btnText": "#FFFDF7",
-    "btnHover": "#352F28",
-    "border": "#E6E0D4",
-    "accent": "#E8DFC9"
+    "primary": "#5C3A82",
+    "secondary": "#3B1F5A",
+    "background": "#E8E2CE",
+    "surface": "#FAFAFA",
+    "heading": "#241830",
+    "bodyText": "#6E5D80",
+    "muted": "#5C3A82",
+    "btnBg": "#5C3A82",
+    "btnText": "#FFFFFF",
+    "btnHover": "#3B1F5A",
+    "border": "#D8CFC0",
+    "accent": "#E3D5F5"
   },
   "images": {
     "heroMain": "./assets/hero-main.jpg",
@@ -738,6 +738,6 @@
       }
     ]
   },
-  "savedAt": "2026-10-20T21:57:18.144Z",
-  "publishedAt": "2026-10-20T21:57:18.144Z"
+  "savedAt": "2026-10-20T22:01:20.774Z",
+  "publishedAt": "2026-10-20T22:01:20.774Z"
 }
