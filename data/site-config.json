@@ -1,0 +1,743 @@
+{
+  "version": 3,
+  "theme": {
+    "primary": "#A89F79",
+    "secondary": "#817653",
+    "background": "#F7F4EC",
+    "surface": "#FFFFFF",
+    "heading": "#352F28",
+    "bodyText": "#352F28",
+    "muted": "#777064",
+    "btnBg": "#817653",
+    "btnText": "#FFFDF7",
+    "btnHover": "#352F28",
+    "border": "#E6E0D4",
+    "accent": "#E8DFC9"
+  },
+  "images": {
+    "heroMain": "./assets/hero-main.jpg",
+    "heroSmall": "./assets/hero-inset.jpg",
+    "storyMain": "./assets/story-main.jpg",
+    "storyInset": "./assets/story-inset.jpg",
+    "logo": "./assets/logo.png"
+  },
+  "contact": {
+    "brand": "BTK Coffee",
+    "tagline": "Brewed to Brighten Your Day",
+    "messenger": "https://m.me/btkcoffeeeee",
+    "facebook": "",
+    "maps": "https://maps.app.goo.gl/x8PXrcovtmqqKweg9?g_st=ipc",
+    "heading": "Your Next Coffee Moment Is Waiting",
+    "description": "Send us a message or drop by — we’d love to brew for you.",
+    "phone": "",
+    "email": "",
+    "address": "",
+    "instructions": "Hours, delivery coverage and payment methods are confirmed on Messenger.",
+    "freeArea": "Barangay 176-A and nearby barangays",
+    "pinLocation": "BTK Coffee or Haidross",
+    "contactName": "Resty or Jezzel",
+    "contactNumber": "09690431840"
+  },
+  "menu": {
+    "categories": [
+      {
+        "id": "coffee",
+        "name": "Coffee"
+      },
+      {
+        "id": "frappe",
+        "name": "Frappe"
+      },
+      {
+        "id": "noncoffee",
+        "name": "Non-Coffee"
+      },
+      {
+        "id": "waffle",
+        "name": "Waffle"
+      },
+      {
+        "id": "ramyeon",
+        "name": "Ramyeon & Fries"
+      }
+    ],
+    "products": [
+      {
+        "id": "cof-americano",
+        "cat": "coffee",
+        "name": "Americano",
+        "desc": "Clean, bold espresso — served iced or hot.",
+        "img": "./assets/americano.jpg",
+        "sizes": [
+          {
+            "label": "12 oz",
+            "price": 7900
+          },
+          {
+            "label": "16 oz",
+            "price": 8900
+          },
+          {
+            "label": "12 oz Hot",
+            "price": 7900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "cof-latte",
+        "cat": "coffee",
+        "name": "Latte",
+        "desc": "Espresso and milk in smooth, easy balance — iced or hot.",
+        "img": "./assets/latte.jpg",
+        "sizes": [
+          {
+            "label": "12 oz",
+            "price": 7900
+          },
+          {
+            "label": "16 oz",
+            "price": 8900
+          },
+          {
+            "label": "12 oz Hot",
+            "price": 7900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "cof-caramel-macchiato",
+        "cat": "coffee",
+        "name": "Caramel Macchiato",
+        "desc": "Milky espresso finished with a ribbon of caramel — iced or hot.",
+        "img": "./assets/caramel-macchiato.jpg",
+        "sizes": [
+          {
+            "label": "12 oz",
+            "price": 8900
+          },
+          {
+            "label": "16 oz",
+            "price": 9900
+          },
+          {
+            "label": "12 oz Hot",
+            "price": 8900
+          }
+        ],
+        "featured": true,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "cof-spanish-latte",
+        "cat": "coffee",
+        "name": "Spanish Latte",
+        "desc": "Sweet, creamy and rich — a BTK house favorite, iced or hot.",
+        "img": "./assets/spanish-latte.jpg",
+        "sizes": [
+          {
+            "label": "12 oz",
+            "price": 8900
+          },
+          {
+            "label": "16 oz",
+            "price": 9900
+          },
+          {
+            "label": "12 oz Hot",
+            "price": 8900
+          }
+        ],
+        "featured": true,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "cof-french-vanilla",
+        "cat": "coffee",
+        "name": "French Vanilla",
+        "desc": "Soft vanilla sweetness folded into espresso and milk — iced or hot.",
+        "img": "./assets/french-vanilla.jpg",
+        "sizes": [
+          {
+            "label": "12 oz",
+            "price": 8900
+          },
+          {
+            "label": "16 oz",
+            "price": 9900
+          },
+          {
+            "label": "12 oz Hot",
+            "price": 8900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "cof-dirty-matcha",
+        "cat": "coffee",
+        "name": "Dirty Matcha",
+        "desc": "Matcha and espresso layered together in one glass.",
+        "img": "./assets/dirty-matcha.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "cof-hershey-coffee",
+        "cat": "coffee",
+        "name": "Hershey Coffee",
+        "desc": "Chocolatey and cold — coffee with a Hershey twist.",
+        "img": "./assets/hershey-coffee.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "cof-tres-leches",
+        "cat": "coffee",
+        "name": "Tres Leches",
+        "desc": "Dessert-inspired milky coffee, sweet and comforting.",
+        "img": "./assets/tres-leches.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "cof-white-choco-mocha",
+        "cat": "coffee",
+        "name": "White Chocolate Mocha",
+        "desc": "Espresso with mellow white chocolate sweetness.",
+        "img": "./assets/white-chocolate-mocha.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "cof-biscoff-latte",
+        "cat": "coffee",
+        "name": "Biscoff Latte",
+        "desc": "Spiced cookie-butter flavour stirred through a cold latte.",
+        "img": "./assets/biscoff-latte.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-java-chip",
+        "cat": "frappe",
+        "name": "Java Chip",
+        "desc": "Blended coffee with chocolate chips — thick and frosty.",
+        "img": "./assets/java-chip-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-hershey-coffee",
+        "cat": "frappe",
+        "name": "Hershey Coffee Frappe",
+        "desc": "Blended coffee with a deep Hershey chocolate finish.",
+        "img": "./assets/hershey-coffee-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-dirty-matcha",
+        "cat": "frappe",
+        "name": "Dirty Matcha Frappe",
+        "desc": "Matcha and espresso, blended ice-cold.",
+        "img": "./assets/dirty-matcha-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-white-choco-mocha",
+        "cat": "frappe",
+        "name": "White Chocolate Mocha Frappe",
+        "desc": "Creamy white chocolate blended with coffee.",
+        "img": "./assets/white-chocolate-mocha-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-biscoff",
+        "cat": "frappe",
+        "name": "Biscoff Frappe",
+        "desc": "Cookie-butter flavour blended into a frosty cup.",
+        "img": "./assets/biscoff-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": true,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-strawberry",
+        "cat": "frappe",
+        "name": "Strawberry Frappe",
+        "desc": "Bright, fruity and ice-blended.",
+        "img": "./assets/strawberry-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-blueberry",
+        "cat": "frappe",
+        "name": "Blueberry Frappe",
+        "desc": "Berry-sweet and refreshingly cold.",
+        "img": "./assets/blueberry-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-hershey-choco",
+        "cat": "frappe",
+        "name": "Hershey Choco Frappe",
+        "desc": "Full-on chocolate, blended — no coffee needed.",
+        "img": "./assets/hershey-choco-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-matcha",
+        "cat": "frappe",
+        "name": "Matcha Frappe",
+        "desc": "Smooth green tea flavour, blended with ice.",
+        "img": "./assets/matcha-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-cookies-cream",
+        "cat": "frappe",
+        "name": "Cookies and Cream Frappe",
+        "desc": "Cookies blended into a creamy, frosty cup.",
+        "img": "./assets/cookies-and-cream-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "fra-ube",
+        "cat": "frappe",
+        "name": "Ube Frappe",
+        "desc": "Filipino ube flavour, blended ice-cold.",
+        "img": "./assets/ube-frappe.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 10900
+          }
+        ],
+        "featured": true,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "nc-strawberry",
+        "cat": "noncoffee",
+        "name": "Strawberry",
+        "desc": "Fruity and refreshing — a caffeine-free pick.",
+        "img": "./assets/strawberry.jpg",
+        "sizes": [
+          {
+            "label": "12 oz",
+            "price": 8900
+          },
+          {
+            "label": "16 oz",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "nc-blueberry",
+        "cat": "noncoffee",
+        "name": "Blueberry",
+        "desc": "Sweet berry flavour over plenty of ice.",
+        "img": "./assets/blueberry.jpg",
+        "sizes": [
+          {
+            "label": "12 oz",
+            "price": 8900
+          },
+          {
+            "label": "16 oz",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "nc-hershey-choco",
+        "cat": "noncoffee",
+        "name": "Hershey Choco",
+        "desc": "Chocolate made with Hershey — served iced or hot.",
+        "img": "./assets/hershey-choco.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 9900
+          },
+          {
+            "label": "12 oz Hot",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "nc-matcha-latte",
+        "cat": "noncoffee",
+        "name": "Matcha Latte",
+        "desc": "Green tea and milk — smooth, grassy and calm, iced or hot.",
+        "img": "./assets/matcha-latte.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 9900
+          },
+          {
+            "label": "12 oz Hot",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "nc-ube-latte",
+        "cat": "noncoffee",
+        "name": "Ube Latte",
+        "desc": "Creamy ube with milk, served cold.",
+        "img": "./assets/ube-latte.jpg",
+        "sizes": [
+          {
+            "label": "16 oz",
+            "price": 9900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "waf-chocolate",
+        "cat": "waffle",
+        "name": "Chocolate Waffle",
+        "desc": "Warm waffle with chocolate — the classic pair for iced coffee.",
+        "img": "./assets/chocolate-waffle.jpg",
+        "sizes": [
+          {
+            "label": "Single",
+            "price": 3900
+          },
+          {
+            "label": "Double",
+            "price": 4900
+          }
+        ],
+        "featured": true,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "waf-caramel",
+        "cat": "waffle",
+        "name": "Caramel Waffle",
+        "desc": "Golden waffle drizzled with caramel.",
+        "img": "./assets/caramel-waffle.jpg",
+        "sizes": [
+          {
+            "label": "Single",
+            "price": 3900
+          },
+          {
+            "label": "Double",
+            "price": 4900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": null
+      },
+      {
+        "id": "waf-cookies-cream",
+        "cat": "waffle",
+        "name": "Cookies and Cream Waffle",
+        "desc": "Crisp waffle with a cookies-and-cream finish.",
+        "img": "./assets/cookies-and-cream-waffle.jpg",
+        "sizes": [
+          {
+            "label": "Single",
+            "price": 4900
+          },
+          {
+            "label": "Double",
+            "price": 5900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": [
+          "Double"
+        ]
+      },
+      {
+        "id": "waf-strawberry",
+        "cat": "waffle",
+        "name": "Strawberry Waffle",
+        "desc": "Waffle with sweet strawberry topping.",
+        "img": "./assets/strawberry-waffle.jpg",
+        "sizes": [
+          {
+            "label": "Single",
+            "price": 4900
+          },
+          {
+            "label": "Double",
+            "price": 5900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": [
+          "Double"
+        ]
+      },
+      {
+        "id": "waf-blueberry",
+        "cat": "waffle",
+        "name": "Blueberry Waffle",
+        "desc": "Waffle with a blueberry topping.",
+        "img": "./assets/blueberry-waffle.jpg",
+        "sizes": [
+          {
+            "label": "Single",
+            "price": 4900
+          },
+          {
+            "label": "Double",
+            "price": 5900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": [
+          "Double"
+        ]
+      },
+      {
+        "id": "ram-samyang-overload",
+        "cat": "ramyeon",
+        "name": "Samyang Overload",
+        "desc": "Loaded Samyang — our biggest noodle plate.",
+        "img": "./assets/samyang-overload.jpg",
+        "sizes": [
+          {
+            "label": "Regular",
+            "price": 15900
+          }
+        ],
+        "featured": true,
+        "available": true,
+        "boxRule": "all"
+      },
+      {
+        "id": "ram-cheesy-samyang",
+        "cat": "ramyeon",
+        "name": "Cheesy Samyang",
+        "desc": "Spicy Samyang noodles with cheese.",
+        "img": "./assets/cheesy-samyang.jpg",
+        "sizes": [
+          {
+            "label": "Regular",
+            "price": 12900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": "all"
+      },
+      {
+        "id": "ram-jin-overload",
+        "cat": "ramyeon",
+        "name": "Jin Ramen Overload",
+        "desc": "Jin Ramen served loaded up.",
+        "img": "./assets/jin-ramen-overload.jpg",
+        "sizes": [
+          {
+            "label": "Regular",
+            "price": 10900
+          }
+        ],
+        "featured": true,
+        "available": true,
+        "boxRule": "all"
+      },
+      {
+        "id": "ram-samyang-ala",
+        "cat": "ramyeon",
+        "name": "Samyang Ala-carte",
+        "desc": "Samyang noodles on their own.",
+        "img": "./assets/samyang-alacarte.jpg",
+        "sizes": [
+          {
+            "label": "Regular",
+            "price": 11900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": "all"
+      },
+      {
+        "id": "ram-jin-ala",
+        "cat": "ramyeon",
+        "name": "Jin Ramen Ala-carte",
+        "desc": "Jin Ramen served ala-carte.",
+        "img": "./assets/jin-ramen-alacarte.jpg",
+        "sizes": [
+          {
+            "label": "Regular",
+            "price": 8900
+          }
+        ],
+        "featured": false,
+        "available": true,
+        "boxRule": "all"
+      },
+      {
+        "id": "ram-cheesy-fries",
+        "cat": "ramyeon",
+        "name": "Cheesy Fries",
+        "desc": "Crispy fries topped with cheese.",
+        "img": "./assets/cheesy-fries.jpg",
+        "sizes": [
+          {
+            "label": "Regular",
+            "price": 6900
+          }
+        ],
+        "featured": true,
+        "available": true,
+        "boxRule": "all"
+      }
+    ]
+  },
+  "savedAt": "2026-10-20T22:36:38.978Z",
+  "publishedAt": "2026-10-20T22:36:38.978Z"
+}
