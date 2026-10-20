@@ -36,7 +36,27 @@
     "freeArea": "Barangay 176-A and nearby barangays",
     "pinLocation": "BTK Coffee or Haidross",
     "contactName": "Resty or Jezzel",
-    "contactNumber": "09690431840"
+    "contactNumber": "09690431840",
+    "announcement": "Your favorite coffee moments start here ☕  ·  Orders are sent and confirmed through Messenger",
+    "heroEyebrow": "BTK Coffee",
+    "heroLine1": "Good Coffee.",
+    "heroLine2": "Better Moments.",
+    "heroLede": "Crafted with passion, inspired by late-night café adventures, and made to brighten your day.",
+    "heroBtnPrimary": "Order Your Favorites",
+    "heroBtnSecondary": "Discover Our Story",
+    "storyHeading": "From Late-Night Café Adventures to Your Favorite Cup",
+    "storyQuote": "“Every cup tells a story of curiosity, creativity, and a shared love for coffee. What started as two people chasing their perfect brew became BTK Coffee — and we’re excited to share that passion with you.”",
+    "storyPara1": "BTK Coffee was born out of a shared passion for coffee between two people who simply loved exploring different cafés every night. What began as a nightly adventure to discover new flavors soon turned into a dream of crafting our own unique blend.",
+    "storyPara2": "With countless cups and late-night experiments, we finally created an iced coffee recipe that perfectly matched our palate. After sharing it with friends and receiving overwhelmingly positive feedback, BTK Coffee was officially established.",
+    "storyBtn": "Taste What We Built",
+    "footerBlurb": "A coffee shop built from a shared passion for exploring cafés and developing the perfect iced coffee.",
+    "footerExploreHeading": "Explore",
+    "footerMenuHeading": "Menu",
+    "footerReachHeading": "Reach Us",
+    "footerMessengerLabel": "Facebook Messenger",
+    "footerMapsLabel": "Google Maps",
+    "footerSmall": "Orders placed through this site are requests. They are confirmed by BTK Coffee on Messenger.",
+    "footerRights": "All rights reserved. PH"
   },
   "menu": {
     "categories": [
@@ -738,6 +758,6 @@
       }
     ]
   },
-  "savedAt": "2026-10-20T22:36:38.978Z",
-  "publishedAt": "2026-10-20T22:36:38.978Z"
+  "savedAt": "2026-10-20T22:47:59.284Z",
+  "publishedAt": "2026-10-20T22:47:59.284Z"
 }
