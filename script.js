@@ -38,7 +38,7 @@
   /* ---------------------------------------------------------
      1. IMAGE HELPERS
      Swap these for local files in /assets/products/ anytime.
-     --------------------------------------------------------- */
+   
   const px = (id, w, h) =>
     `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=${w}&h=${h}`;
 
@@ -69,10 +69,12 @@
     friesB:      px(39799203, 600, 450)
   };
 
+    --------------------------------------------------------- */
+
 /* ---------------------------------------------------------
 1. IMAGE HELPERS
    Uses Google Drive direct image links via File IDs
-
+ --------------------------------------------------------- */
 
 // Helper function to convert a Google Drive File ID into a direct image URL
 const gdrive = (fileId) => `https://lh3.googleusercontent.com/d/${fileId}`;
@@ -87,7 +89,7 @@ const IMG = {
   hershey:       gdrive("PASTE_FILE_ID_HERE"),
   tresLeches:    gdrive("PASTE_FILE_ID_HERE"),
   whiteMocha:    gdrive("PASTE_FILE_ID_HERE"),
-  biscoff:       gdrive("PASTE_FILE_ID_HERE"),
+  biscoff:       gdrive("1RD2vrO_3Za3PhLSuNA8nwvtljwYsBY3f"),
   frappe:        gdrive("PASTE_FILE_ID_HERE"),
   berry:         gdrive("PASTE_FILE_ID_HERE"),
   matcha:        gdrive("PASTE_FILE_ID_HERE"),
@@ -104,7 +106,7 @@ const IMG = {
   friesB:        gdrive("PASTE_FILE_ID_HERE")
 };
 
-   --------------------------------------------------------- */
+  
    
 
   /* ---------------------------------------------------------
