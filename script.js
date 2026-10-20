@@ -69,6 +69,44 @@
     friesB:      px(39799203, 600, 450)
   };
 
+/* ---------------------------------------------------------
+1. IMAGE HELPERS
+   Uses Google Drive direct image links via File IDs
+
+
+// Helper function to convert a Google Drive File ID into a direct image URL
+const gdrive = (fileId) => `https://lh3.googleusercontent.com/d/${fileId}`;
+
+const IMG = {
+  americano:     gdrive("PASTE_FILE_ID_HERE"),
+  latte:         gdrive("PASTE_FILE_ID_HERE"),
+  caramel:       gdrive("PASTE_FILE_ID_HERE"),
+  spanish:       gdrive("PASTE_FILE_ID_HERE"),
+  vanilla:       gdrive("PASTE_FILE_ID_HERE"),
+  dirtyMatcha:   gdrive("PASTE_FILE_ID_HERE"),
+  hershey:       gdrive("PASTE_FILE_ID_HERE"),
+  tresLeches:    gdrive("PASTE_FILE_ID_HERE"),
+  whiteMocha:    gdrive("PASTE_FILE_ID_HERE"),
+  biscoff:       gdrive("PASTE_FILE_ID_HERE"),
+  frappe:        gdrive("PASTE_FILE_ID_HERE"),
+  berry:         gdrive("PASTE_FILE_ID_HERE"),
+  matcha:        gdrive("PASTE_FILE_ID_HERE"),
+  cafe:          gdrive("PASTE_FILE_ID_HERE"),
+  waffleChoc:    gdrive("PASTE_FILE_ID_HERE"),
+  waffleIce:     gdrive("PASTE_FILE_ID_HERE"),
+  waffleDessert: gdrive("PASTE_FILE_ID_HERE"),
+  ramenA:        gdrive("PASTE_FILE_ID_HERE"),
+  ramenB:        gdrive("PASTE_FILE_ID_HERE"),
+  ramenC:        gdrive("PASTE_FILE_ID_HERE"),
+  ramenD:        gdrive("PASTE_FILE_ID_HERE"),
+  ramenE:        gdrive("PASTE_FILE_ID_HERE"),
+  fries:         gdrive("PASTE_FILE_ID_HERE"),
+  friesB:        gdrive("PASTE_FILE_ID_HERE")
+};
+
+   --------------------------------------------------------- */
+   
+
   /* ---------------------------------------------------------
      2. CENTRALIZED MENU DATA  (single source of truth)
      Prices are stored in centavos: ₱89 => 8900
