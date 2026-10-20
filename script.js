@@ -49,7 +49,7 @@
      instead of a broken image, and the Superadmin Image Manager can
      replace any of them.
      --------------------------------------------------------- */
-  const px = (filename) => `./assets${filename}`;
+  const px = (filename) => `./assets/${filename}`;
 
   const IMG = {
     /* --- Coffee --- */
