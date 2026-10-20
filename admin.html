@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Superadmin — BTK Coffee</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#817653">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23817653'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='22' font-weight='700' fill='%23FFFDF7' text-anchor='middle'%3EBTK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+<script>window.BTK_ADMIN = true;</script>
+<script src="config.js"></script>
+</head>
+<body class="admin-body">
+
+<!-- ================= LOGIN ================= -->
+<div class="login-wrap" id="loginView">
+  <main class="login-card" role="main">
+    <div class="login-brand">
+      <span class="lb-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="54" height="54">
+          <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width=".5" opacity=".6"/>
+          <text x="24" y="29.5" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="14.5" font-weight="700" fill="currentColor" stroke="none">BTK</text>
+        </svg>
+      </span>
+      <h1>Superadmin</h1>
+      <p class="lb-tag">BTK Coffee — Brewed to Brighten Your Day</p>
+    </div>
+
+    <form id="loginForm" novalidate autocomplete="off">
+      <div class="a-field">
+        <label for="loginUser">Username</label>
+        <input type="text" id="loginUser" value="superadmin" autocomplete="username" spellcheck="false">
+        <p class="a-hint">The username is fixed and cannot be changed.</p>
+      </div>
+
+      <div class="a-field">
+        <label for="loginPass">Password</label>
+        <div class="pw-wrap">
+          <input type="password" id="loginPass" autocomplete="current-password" placeholder="Enter your password">
+          <button type="button" class="pw-toggle" data-pw-for="loginPass" aria-label="Show password" aria-pressed="false">
+            <svg viewBox="0 0 24 24" class="eye" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <p class="a-alert" id="loginAlert" role="alert" hidden></p>
+      <button type="submit" class="a-btn a-btn-primary full" id="loginSubmit">Sign In</button>
+    </form>
+
+    <details class="login-note">
+      <summary>Security notice — please read</summary>
+      <p>This site has <strong>no backend</strong>. This login is a convenience gate for a single
+      operator, not real security: the check runs in your browser and anyone with DevTools can
+      bypass it. Never store sensitive data here. See the README for the backend work required
+      before this is production-secure.</p>
+      <p id="defaultHint" class="dim"></p>
+    </details>
+    <p class="login-back"><a href="index.html">&larr; Back to the website</a></p>
+  </main>
+</div>
+
+<!-- ================= DASHBOARD ================= -->
+<div class="admin-shell" id="dashView" hidden>
+  <header class="a-topbar">
+    <button type="button" class="a-burger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="a-title">
+      <strong>BTK Coffee</strong><span>Superadmin Dashboard</span>
+    </div>
+    <div class="a-topbar-right">
+      <span class="a-pill" id="dirtyPill" hidden>Unsaved draft</span>
+      <span class="a-pill live" id="livePill" hidden>Live</span>
+      <button type="button" class="gh-chip" id="ghChip" data-goto="github" aria-label="GitHub connection status — open GitHub Setup">
+        <svg viewBox="0 0 24 24" class="gh-mark" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        <span class="gh-dot" id="ghChipDot"></span>
+        <span class="gh-chip-text" id="ghChipText">Not connected</span>
+      </button>
+      <a class="a-btn a-btn-ghost sm" href="index.html" target="_blank" rel="noopener">View Site</a>
+    </div>
+  </header>
+
+  <!-- Publish bar: the only route from draft to live -->
+  <div class="publish-bar" id="publishBar">
+    <div class="pb-status">
+      <span class="pb-dot" id="pbDot"></span>
+      <span id="pbText">Checking published configuration…</span>
+    </div>
+    <div class="pb-actions">
+      <button type="button" class="a-btn a-btn-primary sm" id="pbPublish">Validate &amp; Publish to GitHub</button>
+    </div>
+  </div>
+
+  <div class="a-layout">
+    <aside class="a-side" id="aSide">
+      <nav aria-label="Dashboard sections">
+        <button type="button" class="a-nav is-active" data-view="overview"><span class="an-ico">◉</span> Dashboard Overview</button>
+        <button type="button" class="a-nav" data-view="appearance"><span class="an-ico">◧</span> Website Appearance</button>
+        <button type="button" class="a-nav" data-view="images"><span class="an-ico">▣</span> Image Manager</button>
+        <button type="button" class="a-nav" data-view="menu"><span class="an-ico">☰</span> Menu Management</button>
+        <button type="button" class="a-nav" data-view="content"><span class="an-ico">✎</span> Site Text</button>
+        <button type="button" class="a-nav" data-view="contact"><span class="an-ico">✉</span> Contact &amp; Location</button>
+        <button type="button" class="a-nav" data-view="github"><span class="an-ico">⎇</span> GitHub Setup</button>
+        <button type="button" class="a-nav" data-view="security"><span class="an-ico">⚿</span> Account Security</button>
+        <a class="a-nav" href="index.html" target="_blank" rel="noopener"><span class="an-ico">↗</span> View Live Website</a>
+        <button type="button" class="a-nav danger" id="logoutBtn"><span class="an-ico">⏻</span> Logout</button>
+      </nav>
+      <p class="a-side-note">Edits are a local draft until you <strong>Validate &amp; Publish to GitHub</strong>.</p>
+    </aside>
+    <div class="a-scrim" id="aScrim" hidden></div>
+
+    <main class="a-main" id="aMain">
+
+      <!-- OVERVIEW -->
+      <section class="a-view" data-view="overview">
+        <header class="a-head"><h2>Dashboard Overview</h2><p>A snapshot of your current website configuration.</p></header>
+        <div class="stat-grid" id="statGrid"></div>
+        <div class="a-card">
+          <h3>Current palette</h3>
+          <div class="swatch-row" id="palettePreview"></div>
+        </div>
+        <div class="a-card">
+          <h3>Quick actions</h3>
+          <div class="quick-grid">
+            <button type="button" class="quick" data-goto="appearance"><strong>Edit Website Colours</strong><small>Palette &amp; theme</small></button>
+            <button type="button" class="quick" data-goto="menu"><strong>Manage Menu</strong><small>Items, prices, categories</small></button>
+            <button type="button" class="quick" data-goto="images"><strong>Change Images</strong><small>Hero, story, products</small></button>
+            <button type="button" class="quick" data-goto="content"><strong>Edit Site Text</strong><small>Hero, story, footer</small></button>
+            <button type="button" class="quick" data-goto="contact"><strong>Update Contact Info</strong><small>Links &amp; location</small></button>
+            <button type="button" class="quick" data-goto="security"><strong>Change Password</strong><small>Account security</small></button>
+            <button type="button" class="quick" data-goto="github"><strong>GitHub Setup</strong><small>Connection &amp; publishing</small></button>
+            <a class="quick" href="index.html" target="_blank" rel="noopener"><strong>Preview Website</strong><small>Opens in a new tab</small></a>
+          </div>
+        </div>
+        <div class="a-note">
+          <strong>How publishing works.</strong> Edits are kept as a <em>draft</em> in this browser.
+          Pressing <strong>Validate &amp; Publish to GitHub</strong> validates the entire configuration
+          and commits it to <code>data/site-config.json</code> in your repository. Only then do
+          customers see the change — the public site loads that file on every visit. If validation
+          fails, nothing is committed and the live site is untouched.
+        </div>
+        <div class="a-note warn">
+          <strong>Still not a security boundary.</strong> This login runs in the browser and can be
+          bypassed with DevTools. What protects your repo is the GitHub token: keep it fine-grained,
+          limited to this one repository with <em>Contents: Read and write</em>, and revoke it when done.
+        </div>
+      </section>
+
+      <!-- APPEARANCE -->
+      <section class="a-view" data-view="appearance" hidden>
+        <header class="a-head"><h2>Website Appearance</h2><p>Set the colour palette used across the whole public site.</p></header>
+        <div class="split">
+          <div class="a-card">
+            <h3>Colour palette</h3>
+            <div class="color-list" id="colorList"></div>
+            <div class="a-actions">
+              <button type="button" class="a-btn a-btn-primary" id="saveTheme">Save Changes</button>
+              <button type="button" class="a-btn a-btn-ghost" id="revertTheme">Reset Changes</button>
+              <button type="button" class="a-btn a-btn-danger" id="defaultTheme">Restore Default Palette</button>
+            </div>
+          </div>
+          <div class="a-card sticky">
+            <h3>Live preview</h3>
+            <div class="theme-preview" id="themePreview">
+              <div class="tp-bar"><span class="tp-brand">BTK Coffee</span><span class="tp-cart">Cart · 2</span></div>
+              <div class="tp-body">
+                <p class="tp-eyebrow">Popular Pick</p>
+                <h4 class="tp-h">Good Coffee. Better Moments.</h4>
+                <p class="tp-p">Crafted with passion, made to brighten your day.</p>
+                <div class="tp-card">
+                  <strong class="tp-name">Spanish Latte</strong>
+                  <p class="tp-muted">Sweet, creamy and rich.</p>
+                  <div class="tp-foot"><span class="tp-price">₱89</span><span class="tp-btn">Add to Order</span></div>
+                </div>
+              </div>
+            </div>
+            <p class="a-hint" id="contrastNote"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMAGES -->
+      <section class="a-view" data-view="images" hidden>
+        <header class="a-head"><h2>Image Manager</h2><p>Images are real files in your GitHub repository. Replacing one overwrites the file at its path.</p></header>
+
+        <div class="a-note" id="imgNeedsRepo" hidden>
+          <strong>GitHub is not connected yet.</strong> You can still choose images and download them,
+          but direct commits need a connection. <button type="button" class="link-btn" data-goto="github">Open GitHub Setup →</button>
+        </div>
+
+        <div class="a-card">
+          <h3>Replacement method</h3>
+          <div class="mode-row">
+            <label class="mode-card"><input type="radio" name="imgMode" value="download" checked>
+              <span><strong>Download &amp; commit yourself</strong><small>No token. The dashboard prepares a correctly-named file; you add it to the repo and push.</small></span></label>
+            <label class="mode-card"><input type="radio" name="imgMode" value="api">
+              <span><strong>Commit directly to GitHub</strong><small>Uses the connection from GitHub Setup. Writes the file to your repo immediately.</small></span></label>
+          </div>
+          <p class="a-hint" id="imgModeHint"></p>
+        </div>
+
+        <div class="a-note">Each product has its own file — no two products share a photo. Replacing an image
+        overwrites that exact path, so the public site picks it up with no code change once the commit is deployed.
+        Browsers cache images: hard-refresh (Ctrl/⌘+Shift+R) to see a change immediately.</div>
+
+        <div class="a-card"><h3>Site images</h3><div class="img-grid" id="siteImageGrid"></div></div>
+        <div class="a-card">
+          <h3>Product images</h3>
+          <label class="sr-only" for="imgProductSearch">Search products</label>
+          <input type="search" id="imgProductSearch" class="a-input" placeholder="Search products…">
+          <div class="img-grid" id="productImageGrid"></div>
+        </div>
+        <div class="a-actions sticky-actions">
+          <button type="button" class="a-btn a-btn-primary" id="saveImages">Save Path Changes</button>
+          <button type="button" class="a-btn a-btn-ghost" id="revertImages">Reset Changes</button>
+          <button type="button" class="a-btn a-btn-danger" id="defaultImages">Restore Default Paths</button>
+        </div>
+      </section>
+
+      <!-- MENU -->
+      <section class="a-view" data-view="menu" hidden>
+        <header class="a-head"><h2>Menu Management</h2><p>Add, edit, and remove products and categories. This is the same data the public menu and cart use.</p></header>
+
+        <div class="a-card">
+          <h3>Categories</h3>
+          <div class="cat-list" id="catList"></div>
+          <div class="inline-add">
+            <label class="sr-only" for="newCatName">New category name</label>
+            <input type="text" id="newCatName" class="a-input" placeholder="New category name" maxlength="40">
+            <button type="button" class="a-btn a-btn-ghost" id="addCat">Add Category</button>
+          </div>
+        </div>
+
+        <div class="a-card">
+          <div class="card-head-row">
+            <h3>Products <span class="count-chip" id="prodCount">0</span></h3>
+            <button type="button" class="a-btn a-btn-primary" id="addProduct">+ Add New Product</button>
+          </div>
+          <div class="filter-row">
+            <label class="sr-only" for="prodSearch">Search products</label>
+            <input type="search" id="prodSearch" class="a-input" placeholder="Search products…">
+            <label class="sr-only" for="prodCatFilter">Filter by category</label>
+            <select id="prodCatFilter" class="a-input"></select>
+          </div>
+          <div class="prod-table" id="prodTable"></div>
+          <p class="a-empty" id="prodEmpty" hidden>No products match your filters.</p>
+        </div>
+
+        <div class="a-actions sticky-actions">
+          <button type="button" class="a-btn a-btn-primary" id="saveMenu">Save Changes</button>
+          <button type="button" class="a-btn a-btn-ghost" id="revertMenu">Reset Changes</button>
+          <button type="button" class="a-btn a-btn-danger" id="defaultMenu">Restore Default Menu</button>
+        </div>
+      </section>
+
+      <!-- SITE TEXT -->
+      <section class="a-view" data-view="content" hidden>
+        <header class="a-head"><h2>Site Text</h2><p>Every remaining piece of wording on the public site — announcement bar, hero, Our Story, and the full footer.</p></header>
+        <div id="contentGroups"></div>
+        <div class="a-actions sticky-actions">
+          <button type="button" class="a-btn a-btn-primary" id="saveContent">Save Changes</button>
+          <button type="button" class="a-btn a-btn-ghost" id="revertContent">Reset Changes</button>
+          <button type="button" class="a-btn a-btn-danger" id="defaultContent2">Restore Default Text</button>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="a-view" data-view="contact" hidden>
+        <header class="a-head"><h2>Contact &amp; Location</h2><p>These values appear in the header, contact section, footer, and order summaries.</p></header>
+        <div class="a-card">
+          <div class="form-grid" id="contactForm"></div>
+          <div class="a-actions">
+            <button type="button" class="a-btn a-btn-primary" id="saveContact">Save Changes</button>
+            <button type="button" class="a-btn a-btn-ghost" id="revertContact">Reset Changes</button>
+            <a class="a-btn a-btn-ghost" href="index.html#findus" target="_blank" rel="noopener">Preview Changes</a>
+            <button type="button" class="a-btn a-btn-danger" id="defaultContact">Restore Default Info</button>
+          </div>
+        </div>
+        <div class="a-note">Leave the phone, email, address, or Facebook fields blank to hide them on the
+        public site. Nothing is invented — blank means not displayed.</div>
+      </section>
+
+      <!-- GITHUB SETUP -->
+      <section class="a-view" data-view="github" hidden>
+        <header class="a-head"><h2>GitHub Setup</h2><p>Connect the repository that stores your images and published configuration.</p></header>
+
+        <div class="conn-banner" id="connBanner">
+          <span class="cb-dot" id="connDot"></span>
+          <div class="cb-text">
+            <strong id="connTitle">Not connected</strong>
+            <span id="connDetail">Add your repository details and a token to enable publishing.</span>
+          </div>
+        </div>
+
+        <div class="a-card">
+          <h3>1. Repository storage</h3>
+          <div class="form-grid">
+            <div class="a-field"><label for="ghOwner">GitHub owner / username</label><input type="text" id="ghOwner" class="a-input" placeholder="your-username" spellcheck="false"><p class="a-err" id="errGhOwner" role="alert"></p></div>
+            <div class="a-field"><label for="ghRepo">Repository name</label><input type="text" id="ghRepo" class="a-input" placeholder="btk-coffee" spellcheck="false"><p class="a-err" id="errGhRepo" role="alert"></p></div>
+            <div class="a-field"><label for="ghBranch">Branch</label><input type="text" id="ghBranch" class="a-input" placeholder="main" spellcheck="false"></div>
+            <div class="a-field"><label for="ghDir">Image folder</label><input type="text" id="ghDir" class="a-input" placeholder="assets" spellcheck="false"><p class="a-hint">Images live here. Default: <code>assets</code></p></div>
+          </div>
+          <div class="a-actions"><button type="button" class="a-btn a-btn-primary" id="saveRepo">Save Repository Settings</button></div>
+        </div>
+
+        <div class="a-card">
+          <h3>2. Access token</h3>
+          <div class="a-field">
+            <label for="ghToken">Fine-grained personal access token</label>
+            <div class="pw-wrap">
+              <input type="password" id="ghToken" class="a-input" placeholder="github_pat_…" autocomplete="off" spellcheck="false">
+              <button type="button" class="pw-toggle" data-pw-for="ghToken" aria-label="Show token" aria-pressed="false">
+                <svg viewBox="0 0 24 24" class="eye" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+            <p class="a-hint">Scope it to this one repository with <strong>Contents: Read and write</strong> only.</p>
+          </div>
+          <div class="a-actions">
+            <button type="button" class="a-btn a-btn-primary" id="ghUseToken">Connect</button>
+            <button type="button" class="a-btn a-btn-ghost" id="ghTest">Test Connection</button>
+            <button type="button" class="a-btn a-btn-danger" id="ghForget">Disconnect</button>
+          </div>
+          <p class="a-err" id="ghStatus" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="a-card">
+          <h3>3. What gets written</h3>
+          <dl class="kv-list">
+            <div><dt>Published configuration</dt><dd><code>data/site-config.json</code> — menu, prices, colours, contact details</dd></div>
+            <div><dt>Images</dt><dd><code id="ghDirEcho">assets</code>/&lt;name&gt;.jpg — one file per product</dd></div>
+          </dl>
+          <p class="a-hint">Nothing else in your repository is ever touched. Every write is a normal commit you can review or revert in GitHub.</p>
+        </div>
+
+        <div class="a-note warn">
+          <strong>Token handling — read this.</strong> The token is held in <code>sessionStorage</code> and is
+          erased when you close this tab. It is never written to localStorage and never committed to the repo.
+          Even so, a browser-held write token can be read by any script on this origin, so only use a
+          fine-grained token limited to this single repository, and revoke it when you have finished.
+          Never paste a classic token with broad scopes.
+        </div>
+      </section>
+
+      <!-- SECURITY -->
+      <section class="a-view" data-view="security" hidden>
+        <header class="a-head"><h2>Account Security</h2><p>Change the Superadmin password for this browser.</p></header>
+        <div class="a-card">
+          <div class="a-field">
+            <label for="secUser">Username</label>
+            <input type="text" id="secUser" value="superadmin" readonly aria-readonly="true">
+            <p class="a-hint">Fixed by design — the username cannot be renamed, replaced, or deleted.</p>
+          </div>
+        </div>
+
+        <div class="a-card">
+          <h3>Change password</h3>
+          <form id="pwForm" novalidate autocomplete="off">
+            <div class="a-field">
+              <label for="pwCurrent">Current password</label>
+              <div class="pw-wrap">
+                <input type="password" id="pwCurrent" autocomplete="current-password">
+                <button type="button" class="pw-toggle" data-pw-for="pwCurrent" aria-label="Show password" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" class="eye" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+              <p class="a-err" id="errCurrent" role="alert"></p>
+            </div>
+            <div class="a-field">
+              <label for="pwNew">New password</label>
+              <div class="pw-wrap">
+                <input type="password" id="pwNew" autocomplete="new-password">
+                <button type="button" class="pw-toggle" data-pw-for="pwNew" aria-label="Show password" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" class="eye" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+              <div class="pw-meter"><span id="pwBar"></span></div>
+              <p class="a-hint">At least 12 characters, including letters and numbers. Special characters are encouraged.</p>
+              <p class="a-err" id="errNew" role="alert"></p>
+            </div>
+            <div class="a-field">
+              <label for="pwConfirm">Confirm new password</label>
+              <div class="pw-wrap">
+                <input type="password" id="pwConfirm" autocomplete="new-password">
+                <button type="button" class="pw-toggle" data-pw-for="pwConfirm" aria-label="Show password" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" class="eye" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+              <p class="a-err" id="errConfirm" role="alert"></p>
+            </div>
+            <button type="submit" class="a-btn a-btn-primary">Update Password</button>
+          </form>
+        </div>
+
+        <div class="a-note warn">
+          <strong>What this prototype can and cannot do.</strong>
+          It can: enforce a fixed username, hash the password with PBKDF2-SHA-256 before storing it,
+          rate-limit repeated attempts, and expire the session when the tab closes.
+          It cannot: stop anyone who opens DevTools. Real protection needs server-side
+          authentication, server-side hashing, HTTP-only session cookies, and access control.
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<!-- Product editor modal -->
+<div class="a-modal-scrim" id="prodScrim" hidden>
+  <div class="a-modal" role="dialog" aria-modal="true" aria-labelledby="prodModalTitle">
+    <header class="am-head">
+      <h3 id="prodModalTitle">Edit Product</h3>
+      <button type="button" class="am-close" id="prodClose" aria-label="Close">&times;</button>
+    </header>
+    <div class="am-body">
+      <div class="a-field"><label for="pName">Product name</label><input type="text" id="pName" class="a-input" maxlength="60"><p class="a-err" id="errPName" role="alert"></p></div>
+      <div class="a-field"><label for="pCat">Category</label><select id="pCat" class="a-input"></select></div>
+      <div class="a-field"><label for="pDesc">Description</label><textarea id="pDesc" class="a-input" rows="2" maxlength="220"></textarea></div>
+      <div class="a-field">
+        <label for="pImg">Image URL</label>
+        <input type="text" id="pImg" class="a-input" placeholder="assets/products/name.jpg or https://…">
+        <div class="img-inline">
+          <img id="pImgPreview" alt="" class="img-thumb">
+          <label class="a-btn a-btn-ghost sm file-btn">Upload…<input type="file" id="pImgFile" accept="image/png,image/jpeg,image/webp" hidden></label>
+        </div>
+        <p class="a-err" id="errPImg" role="alert"></p>
+      </div>
+      <fieldset class="a-field">
+        <legend>Sizes &amp; prices (₱)</legend>
+        <div id="pSizes" class="size-rows"></div>
+        <button type="button" class="a-btn a-btn-ghost sm" id="addSize">+ Add size option</button>
+        <p class="a-err" id="errPSizes" role="alert"></p>
+      </fieldset>
+      <div class="a-field">
+        <label for="pBoxRule">Take-out box (₱5)</label>
+        <select id="pBoxRule" class="a-input">
+          <option value="">No take-out box</option>
+          <option value="all">Charge for every size</option>
+          <option value="double">Charge for "Double" size only</option>
+        </select>
+      </div>
+      <div class="check-row">
+        <label class="a-check"><input type="checkbox" id="pAvailable" checked> <span>Available for ordering</span></label>
+        <label class="a-check"><input type="checkbox" id="pFeatured"> <span>Show in Featured Favorites</span></label>
+      </div>
+    </div>
+    <footer class="am-foot">
+      <button type="button" class="a-btn a-btn-ghost" id="prodCancel">Cancel</button>
+      <button type="button" class="a-btn a-btn-primary" id="prodSave">Save Product</button>
+    </footer>
+  </div>
+</div>
+
+<!-- Confirm dialog -->
+<div class="a-modal-scrim" id="confirmScrim" hidden>
+  <div class="a-modal small" role="alertdialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmMsg">
+    <header class="am-head"><h3 id="confirmTitle">Are you sure?</h3></header>
+    <div class="am-body"><p id="confirmMsg"></p></div>
+    <footer class="am-foot">
+      <button type="button" class="a-btn a-btn-ghost" id="confirmNo">Cancel</button>
+      <button type="button" class="a-btn a-btn-danger" id="confirmYes">Confirm</button>
+    </footer>
+  </div>
+</div>
+
+<div class="a-toasts" id="aToasts" role="status" aria-live="polite"></div>
+
+<!-- script.js is loaded here ONLY to register the authored menu catalogue as the
+     default configuration. It detects the absent public markup and renders nothing. -->
+<script src="script.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
