@@ -39,7 +39,7 @@
      1. IMAGE HELPERS
      Swap these for local files in /assets/products/ anytime.
 
-       --------------------------------------------------------- */
+ 
    
   const px = (id, w, h) =>
     `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=${w}&h=${h}`;
@@ -71,44 +71,44 @@
     friesB:      px(39799203, 600, 450)
   };
 
-  
+        --------------------------------------------------------- */
 
 /* ---------------------------------------------------------
 1. IMAGE HELPERS
    Uses Google Drive direct image links via File IDs
 
+ --------------------------------------------------------- */  
 
 // Helper function to convert a Google Drive File ID into a direct image URL
-const gdrive = (fileId) => `https://lh3.googleusercontent.com/d/${fileId}`;
+const px = (filename) => `./assets/${filename}`;
 
 const IMG = {
-  americano:     gdrive("PASTE_FILE_ID_HERE"),
-  latte:         gdrive("PASTE_FILE_ID_HERE"),
-  caramel:       gdrive("PASTE_FILE_ID_HERE"),
-  spanish:       gdrive("PASTE_FILE_ID_HERE"),
-  vanilla:       gdrive("PASTE_FILE_ID_HERE"),
-  dirtyMatcha:   gdrive("PASTE_FILE_ID_HERE"),
-  hershey:       gdrive("PASTE_FILE_ID_HERE"),
-  tresLeches:    gdrive("PASTE_FILE_ID_HERE"),
-  whiteMocha:    gdrive("PASTE_FILE_ID_HERE"),
-  biscoff:       gdrive("1RD2vrO_3Za3PhLSuNA8nwvtljwYsBY3f"),
-  frappe:        gdrive("PASTE_FILE_ID_HERE"),
-  berry:         gdrive("PASTE_FILE_ID_HERE"),
-  matcha:        gdrive("PASTE_FILE_ID_HERE"),
-  cafe:          gdrive("PASTE_FILE_ID_HERE"),
-  waffleChoc:    gdrive("PASTE_FILE_ID_HERE"),
-  waffleIce:     gdrive("PASTE_FILE_ID_HERE"),
-  waffleDessert: gdrive("PASTE_FILE_ID_HERE"),
-  ramenA:        gdrive("PASTE_FILE_ID_HERE"),
-  ramenB:        gdrive("PASTE_FILE_ID_HERE"),
-  ramenC:        gdrive("PASTE_FILE_ID_HERE"),
-  ramenD:        gdrive("PASTE_FILE_ID_HERE"),
-  ramenE:        gdrive("PASTE_FILE_ID_HERE"),
-  fries:         gdrive("PASTE_FILE_ID_HERE"),
-  friesB:        gdrive("PASTE_FILE_ID_HERE")
+  americano:     px("americano.jpg"),
+  latte:         px("latte.jpg"),
+  caramel:       px("caramel-macchiato.jpg"),
+  spanish:       px("spanish-latte.jpg"),
+  vanilla:       px("french-vanilla.jpg"),
+  dirtyMatcha:   px("dirty-matcha.jpg"),
+  hershey:       px("hershey-coffee.jpg"),
+  tresLeches:    px("tres-leches.jpg"),
+  whiteMocha:    px("white-chocolate-mocha.jpg"),
+  biscoff:       px("biscoff-latte.jpg"),
+  frappe:        px("java-chip-frappe.jpg"),
+  berry:         px("strawberry.jpg"),
+  matcha:        px("matcha.jpg"),
+  cafe:          px("cafe.jpg"),
+  waffleChoc:    px("chocolate-waffle.jpg"),
+  waffleIce:     px("waffle-ice-cream.jpg"),
+  waffleDessert: px("waffle-dessert.jpg"),
+  ramenA:        px("samyang-overload.jpg"),
+  ramenB:        px("cheesy-samyang.jpg"),
+  ramenC:        px("jin-ramen-overload.jpg"),
+  ramenD:        px("samyang-alacarte.jpg"),
+  ramenE:        px("jin-ramen-alacarte.jpg"),
+  fries:         px("cheesy-fries.jpg"),
+  friesB:        px("fries.jpg")
 };
 
- --------------------------------------------------------- */  
    
 
   /* ---------------------------------------------------------
