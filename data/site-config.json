@@ -743,13 +743,13 @@
       {
         "id": "tapsilog",
         "cat": "rice-meals",
-        "name": "Tapsilog",
+        "name": "Diwata Pares Overcook",
         "desc": "",
         "img": "",
         "sizes": [
           {
             "label": "1 Regular",
-            "price": 9900
+            "price": 100000
           }
         ],
         "featured": true,
@@ -758,6 +758,6 @@
       }
     ]
   },
-  "savedAt": "2026-10-20T21:52:28.950Z",
-  "publishedAt": "2026-10-20T21:52:28.950Z"
+  "savedAt": "2026-10-20T21:55:33.646Z",
+  "publishedAt": "2026-10-20T21:55:33.646Z"
 }
