@@ -59,10 +59,6 @@
       {
         "id": "ramyeon",
         "name": "Ramyeon & Fries"
-      },
-      {
-        "id": "rice-meals",
-        "name": "Rice Meals"
       }
     ],
     "products": [
@@ -739,25 +735,9 @@
         "featured": false,
         "available": true,
         "boxRule": "all"
-      },
-      {
-        "id": "tapsilog",
-        "cat": "rice-meals",
-        "name": "Diwata Pares Overcook",
-        "desc": "",
-        "img": "",
-        "sizes": [
-          {
-            "label": "1 Regular",
-            "price": 100000
-          }
-        ],
-        "featured": true,
-        "available": true,
-        "boxRule": "all"
       }
     ]
   },
-  "savedAt": "2026-10-20T21:55:33.646Z",
-  "publishedAt": "2026-10-20T21:55:33.646Z"
+  "savedAt": "2026-10-20T21:57:18.144Z",
+  "publishedAt": "2026-10-20T21:57:18.144Z"
 }
