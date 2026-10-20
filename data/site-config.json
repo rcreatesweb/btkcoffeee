@@ -94,12 +94,12 @@
             "price": 7900
           },
           {
-            "label": "16 oz",
-            "price": 8900
-          },
-          {
             "label": "12 oz Hot",
             "price": 7900
+          },
+          {
+            "label": "16 oz",
+            "price": 8900
           }
         ],
         "featured": false,
@@ -118,12 +118,12 @@
             "price": 7900
           },
           {
-            "label": "16 oz",
-            "price": 8900
-          },
-          {
             "label": "12 oz Hot",
             "price": 7900
+          },
+          {
+            "label": "16 oz",
+            "price": 8900
           }
         ],
         "featured": false,
@@ -142,12 +142,12 @@
             "price": 8900
           },
           {
-            "label": "16 oz",
-            "price": 9900
-          },
-          {
             "label": "12 oz Hot",
             "price": 8900
+          },
+          {
+            "label": "16",
+            "price": 9900
           }
         ],
         "featured": true,
@@ -166,12 +166,12 @@
             "price": 8900
           },
           {
-            "label": "16 oz",
-            "price": 9900
-          },
-          {
             "label": "12 oz Hot",
             "price": 8900
+          },
+          {
+            "label": "16 oz",
+            "price": 9900
           }
         ],
         "featured": true,
@@ -190,12 +190,12 @@
             "price": 8900
           },
           {
-            "label": "16 oz",
-            "price": 9900
-          },
-          {
             "label": "12 oz Hot",
             "price": 8900
+          },
+          {
+            "label": "16 oz",
+            "price": 9900
           }
         ],
         "featured": false,
@@ -506,11 +506,11 @@
         "img": "./assets/hershey-choco.jpg",
         "sizes": [
           {
-            "label": "16 oz",
+            "label": "12 oz Hot",
             "price": 9900
           },
           {
-            "label": "12 oz Hot",
+            "label": "16 oz",
             "price": 9900
           }
         ],
@@ -526,11 +526,11 @@
         "img": "./assets/matcha-latte.jpg",
         "sizes": [
           {
-            "label": "16 oz",
+            "label": "12 oz Hot",
             "price": 9900
           },
           {
-            "label": "12 oz Hot",
+            "label": "16 oz",
             "price": 9900
           }
         ],
@@ -758,6 +758,6 @@
       }
     ]
   },
-  "savedAt": "2026-10-20T22:47:59.284Z",
-  "publishedAt": "2026-10-20T22:47:59.284Z"
+  "savedAt": "2026-10-20T22:53:36.082Z",
+  "publishedAt": "2026-10-20T22:53:36.082Z"
 }
