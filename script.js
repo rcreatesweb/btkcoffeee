@@ -60,6 +60,44 @@
     friesB:      px(39799203, 600, 450)
   };
 
+
+/* ---------------------------------------------------------
+   1. IMAGE HELPERS
+   Uses local images stored in /assets/products/
+   
+
+const px = (filename) => `./assets/products/${filename}`;
+
+const IMG = {
+  americano:     px("americano.jpg"),
+  latte:         px("latte.jpg"),
+  caramel:       px("caramel-macchiato.jpg"),
+  spanish:       px("spanish-latte.jpg"),
+  vanilla:       px("french-vanilla.jpg"),
+  dirtyMatcha:   px("dirty-matcha.jpg"),
+  hershey:       px("hershey-coffee.jpg"),
+  tresLeches:    px("tres-leches.jpg"),
+  whiteMocha:    px("white-chocolate-mocha.jpg"),
+  biscoff:       px("biscoff-latte.jpg"),
+  frappe:        px("java-chip-frappe.jpg"),
+  berry:         px("strawberry.jpg"),
+  matcha:        px("matcha.jpg"),
+  cafe:          px("cafe.jpg"),
+  waffleChoc:    px("chocolate-waffle.jpg"),
+  waffleIce:     px("waffle-ice-cream.jpg"),
+  waffleDessert: px("waffle-dessert.jpg"),
+  ramenA:        px("samyang-overload.jpg"),
+  ramenB:        px("cheesy-samyang.jpg"),
+  ramenC:        px("jin-ramen-overload.jpg"),
+  ramenD:        px("samyang-alacarte.jpg"),
+  ramenE:        px("jin-ramen-alacarte.jpg"),
+  fries:         px("cheesy-fries.jpg"),
+  friesB:        px("fries.jpg")
+};
+
+   --------------------------------------------------------- */
+
+
   /* ---------------------------------------------------------
      2. CENTRALIZED MENU DATA  (single source of truth)
      Prices are stored in centavos: ₱89 => 8900
