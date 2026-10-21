@@ -56,7 +56,13 @@
     "footerMessengerLabel": "Facebook Messenger",
     "footerMapsLabel": "Google Maps",
     "footerSmall": "Open Daily: 5:00 PM – 12:00 AM (Last call at 11:30 PM)\nPlease check our Facebook page for daily opening updates.",
-    "footerRights": "All rights reserved. PH"
+    "footerRights": "All rights reserved. PH",
+    "storeStatusEnabled": true,
+    "storeOpen": true,
+    "storeOpenLabel": "Open today",
+    "storeClosedLabel": "Closed today",
+    "storeOpenNote": "Accepting orders",
+    "storeClosedNote": "Orders reopen soon"
   },
   "menu": {
     "categories": [
@@ -78,7 +84,11 @@
       },
       {
         "id": "ramyeon",
-        "name": "Ramyeon & Fries"
+        "name": "Ramyeon"
+      },
+      {
+        "id": "fries",
+        "name": "Fries"
       }
     ],
     "products": [
@@ -742,7 +752,7 @@
       },
       {
         "id": "ram-cheesy-fries",
-        "cat": "ramyeon",
+        "cat": "fries",
         "name": "Cheesy Fries",
         "desc": "Crispy fries topped with cheese.",
         "img": "./assets/cheesy-fries.jpg",
@@ -756,8 +766,89 @@
         "available": true,
         "boxRule": "all"
       }
+    ],
+    "addons": [
+      {
+        "id": "add-espresso",
+        "name": "Add Espresso",
+        "price": 3000,
+        "note": "Single Shot Espresso Add-ons",
+        "appliesTo": [
+          "coffee",
+          "frappe",
+          "noncoffee"
+        ]
+      },
+      {
+        "id": "add-flavor",
+        "name": "Add Flavor",
+        "price": 2000,
+        "note": "Additional Flavored Syrup or Sauce",
+        "appliesTo": [
+          "coffee",
+          "frappe",
+          "noncoffee"
+        ]
+      },
+      {
+        "id": "add-toppings",
+        "name": "Add Toppings",
+        "price": 2000,
+        "note": "Addtional Toppings",
+        "appliesTo": [
+          "frappe"
+        ]
+      },
+      {
+        "id": "add-whipped-cream",
+        "name": "Add Whipped Cream",
+        "price": 2000,
+        "note": "Addtional Whipped Cream",
+        "appliesTo": [
+          "coffee",
+          "frappe",
+          "noncoffee"
+        ]
+      },
+      {
+        "id": "add-nori",
+        "name": "Add Nori",
+        "price": 2500,
+        "note": "1 pack",
+        "appliesTo": [
+          "ramyeon"
+        ]
+      },
+      {
+        "id": "add-cheese-sauce",
+        "name": "Add Cheese Sauce",
+        "price": 3500,
+        "note": "Additional 1 scoop of Cheese Sauce",
+        "appliesTo": [
+          "ramyeon",
+          "fries"
+        ]
+      },
+      {
+        "id": "add-egg",
+        "name": "Add Egg",
+        "price": 2500,
+        "note": "1 Additional Sunny-side up Egg",
+        "appliesTo": [
+          "ramyeon"
+        ]
+      },
+      {
+        "id": "add-ham",
+        "name": "Add Ham",
+        "price": 3000,
+        "note": "Additional 1 slice of Ham",
+        "appliesTo": [
+          "ramyeon"
+        ]
+      }
     ]
   },
-  "savedAt": "2026-10-21T18:18:41.895Z",
-  "publishedAt": "2026-10-21T18:18:41.895Z"
+  "savedAt": "2026-10-21T19:03:13.204Z",
+  "publishedAt": "2026-10-21T19:03:13.204Z"
 }
