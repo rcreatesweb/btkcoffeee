@@ -62,7 +62,45 @@
     "storeOpenLabel": "Open today",
     "storeClosedLabel": "Closed today",
     "storeOpenNote": "Accepting orders",
-    "storeClosedNote": "Orders reopen soon"
+    "storeClosedNote": "Orders reopen soon",
+    "storeAutoHours": true,
+    "storeHours": {
+      "sun": {
+        "open": true,
+        "from": "17:00",
+        "to": "23:30"
+      },
+      "mon": {
+        "open": true,
+        "from": "17:00",
+        "to": "23:30"
+      },
+      "tue": {
+        "open": true,
+        "from": "17:00",
+        "to": "23:30"
+      },
+      "wed": {
+        "open": true,
+        "from": "17:00",
+        "to": "23:30"
+      },
+      "thu": {
+        "open": true,
+        "from": "17:00",
+        "to": "23:30"
+      },
+      "fri": {
+        "open": true,
+        "from": "17:00",
+        "to": "23:30"
+      },
+      "sat": {
+        "open": true,
+        "from": "17:00",
+        "to": "23:30"
+      }
+    }
   },
   "menu": {
     "categories": [
@@ -849,6 +887,6 @@
       }
     ]
   },
-  "savedAt": "2026-10-21T19:07:26.101Z",
-  "publishedAt": "2026-10-21T19:07:26.101Z"
+  "savedAt": "2026-10-21T19:44:11.445Z",
+  "publishedAt": "2026-10-21T19:44:11.445Z"
 }
