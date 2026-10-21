@@ -138,7 +138,7 @@
         "img": "./assets/americano.jpg",
         "sizes": [
           {
-            "label": "12 oz",
+            "label": "12 oz Iced",
             "price": 7900
           },
           {
@@ -146,7 +146,7 @@
             "price": 7900
           },
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 8900
           }
         ],
@@ -162,7 +162,7 @@
         "img": "./assets/latte.jpg",
         "sizes": [
           {
-            "label": "12 oz",
+            "label": "12 oz Iced",
             "price": 7900
           },
           {
@@ -170,7 +170,7 @@
             "price": 7900
           },
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 8900
           }
         ],
@@ -186,7 +186,7 @@
         "img": "./assets/caramel-macchiato.jpg",
         "sizes": [
           {
-            "label": "12 oz",
+            "label": "12 oz Iced",
             "price": 8900
           },
           {
@@ -194,7 +194,7 @@
             "price": 8900
           },
           {
-            "label": "16",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -210,7 +210,7 @@
         "img": "./assets/spanish-latte.jpg",
         "sizes": [
           {
-            "label": "12 oz",
+            "label": "12 oz Iced",
             "price": 8900
           },
           {
@@ -234,7 +234,7 @@
         "img": "./assets/french-vanilla.jpg",
         "sizes": [
           {
-            "label": "12 oz",
+            "label": "12 oz Iced",
             "price": 8900
           },
           {
@@ -242,7 +242,7 @@
             "price": 8900
           },
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -258,7 +258,7 @@
         "img": "./assets/dirty-matcha.jpg",
         "sizes": [
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -274,7 +274,7 @@
         "img": "./assets/hershey-coffee.jpg",
         "sizes": [
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -290,7 +290,7 @@
         "img": "./assets/tres-leches.jpg",
         "sizes": [
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -306,7 +306,7 @@
         "img": "./assets/white-chocolate-mocha.jpg",
         "sizes": [
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -514,11 +514,11 @@
         "img": "./assets/strawberry.jpg",
         "sizes": [
           {
-            "label": "12 oz",
+            "label": "12 oz Iced",
             "price": 8900
           },
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -534,11 +534,11 @@
         "img": "./assets/blueberry.jpg",
         "sizes": [
           {
-            "label": "12 oz",
+            "label": "12 oz Iced",
             "price": 8900
           },
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -558,7 +558,7 @@
             "price": 9900
           },
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -578,7 +578,7 @@
             "price": 9900
           },
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -594,7 +594,7 @@
         "img": "./assets/ube-latte.jpg",
         "sizes": [
           {
-            "label": "16 oz",
+            "label": "16 oz Iced",
             "price": 9900
           }
         ],
@@ -887,6 +887,6 @@
       }
     ]
   },
-  "savedAt": "2026-10-21T19:44:11.445Z",
-  "publishedAt": "2026-10-21T19:44:11.445Z"
+  "savedAt": "2026-10-21T20:08:29.735Z",
+  "publishedAt": "2026-10-21T20:08:29.735Z"
 }
